@@ -10,9 +10,9 @@ ports: "5000" #[optional, default:5000]
 paths:
   workdir: "/home/playground"
   artifacts: "/artifacts"
-model: #[optional, but required for model parsing and model deployments]
-  type: Tensorflow #[required for model, one of: Tensorflow|ONNX|Custom]
-  path: "/data"
+model:
+  type: "TensorFlow"
+  path: "/storage/models"
 
 worker:
   container: "tensorflow/tensorflow:1.8.0-gpu"
