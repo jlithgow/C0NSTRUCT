@@ -4,7 +4,7 @@ version: 1
 
 project: "Construct"
 experiment: "Wilson-1" #[optional, default:<repo name>]
-type: "experiment-type" #[single|multi-grpc|multi-mpi]
+type: "single" #[single|multi-grpc|multi-mpi]
 ports: "5000" #[optional, default:5000]
 
 paths: #[optional]
