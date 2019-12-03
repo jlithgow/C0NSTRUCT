@@ -7,9 +7,9 @@ experiment: "Wilson-1" #[optional, default:<repo name>]
 type: "single" #[single|multi-grpc|multi-mpi]
 ports: "5000" #[optional, default:5000]
 
-paths: #[optional]
-  workdir: "/path/to/workdir"
-  artifacts: "/path/to/artifacts"
+paths:
+  workdir: "/home/playground"
+  artifacts: "/artifacts"
 model: #[optional, but required for model parsing and model deployments]
   type: Tensorflow #[required for model, one of: Tensorflow|ONNX|Custom]
   path: "/data"
@@ -18,7 +18,6 @@ worker:
   container: "tensorflow/tensorflow:1.8.0-gpu"
   command: "nvidia-smi"
   machine-type: "K80"
-  count: 1 #[required for multi-node]
   dockerfile:
     use: true
 parameter-server: #[required for multi-node]
