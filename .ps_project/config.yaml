@@ -11,7 +11,7 @@ paths: #[optional]
   workdir: "/path/to/workdir"
   artifacts: "/path/to/artifacts"
 model: #[optional, but required for model parsing and model deployments]
-  type: "Tensorflow" #[required for model, one of: Tensorflow|ONNX|Custom]
+  type: Tensorflow #[required for model, one of: Tensorflow|ONNX|Custom]
   path: "/data"
 
 worker:
