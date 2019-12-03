@@ -12,7 +12,7 @@ paths: #[optional]
   artifacts: "/path/to/artifacts"
 model: #[optional, but required for model parsing and model deployments]
   type: "Tensorflow" #[required for model, one of: Tensorflow|ONNX|Custom]
-  path: "/path/to/model"
+  path: "/data"
 
 worker:
   container: "tensorflow/tensorflow:1.8.0-gpu"
